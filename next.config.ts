@@ -1,9 +1,5 @@
-import type { NextConfig } from "next"
+import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  webpack: (config) => {
-    config.externals = [...(config.externals || []), { canvas: "canvas" }]
-    return config
-  },
-}
-export default nextConfig
+const nextConfig: NextConfig = {};
+
+export default nextConfig;
