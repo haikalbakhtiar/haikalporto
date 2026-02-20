@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base { body { @apply bg-primary text-white; } }
+@layer components {
+  .section-heading { @apply text-3xl md:text-4xl font-bold text-white mb-2; }
+  .accent-line { @apply w-16 h-1 bg-accent rounded mb-8; }
+  .card { @apply bg-card rounded-2xl p-6 border border-white/10 hover:border-accent/40 transition-all duration-300; }
+  .tag { @apply inline-block px-3 py-1 rounded-full text-xs font-semibold bg-accent/10 text-accent border border-accent/20; }
+  .btn-primary { @apply px-6 py-3 rounded-xl bg-accent text-primary font-semibold hover:bg-accent/80 transition-all duration-200; }
+  .btn-outline { @apply px-6 py-3 rounded-xl border border-accent text-accent font-semibold hover:bg-accent/10 transition-all duration-200; }
+}
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+@media (max-width: 640px) {
+  .about-top-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
